@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connecté</title>
-</head>
-<body>
-    <div>
-        <?php echo "Bienvenu !" ?>
-    </div>
-</body>
-</html>
+<?php
+session_start();
+
+if (isset($_SESSION['util_id'])) {
+    $util_id = $_SESSION['util_id'];
+    
+    if (isset($_SESSION['nom'])) {
+        $nom = $_SESSION['nom'];
+        echo "Bienvenue, " . $nom;
+    } else {
+        echo "Veuillez vous connecter";
+    }
+} else {
+    echo "Non connecté";
+}
+?>
