@@ -1,4 +1,5 @@
 <?php 
+header("Location:../pages/connexion.php");
 require('cnx.php');
 
 // Vérifier si le formulaire a été soumis et récupérer les entrées du formulaire
@@ -15,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 VALUES('$nom', '$prenom', '$birthday', '$sexe', '$email', '$hash_pass')";
 
         if ($cnp->query($sql) === TRUE) {
-            header("Location: connexion.php");
-            exit();
             echo "Inscription réussie.";
+            exit();
+            
         } 
         
     }

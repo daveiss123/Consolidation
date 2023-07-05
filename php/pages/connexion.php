@@ -29,16 +29,16 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="post" action="php/connexion/insertionenbdd.php">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="post" action="../connexion/verification.php">
 					<span class="login100-form-title">
-						Inscription
+						Connexion
 					</span>
 
 					
-					  <div class="wrap-input100 validate-input m-b-16" data-validate="veuillez renseigner votre adresse mail">
+					  <div class="wrap-input100 validate-input m-b-16" >
 						<input class="input100" type="email" name="email" placeholder="Adresse mail">
 						<span class="focus-input100"></span>
-					</div>
+					 </div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Please enter password">
 						<input class="input100" type="password" name="mot_de_passe" placeholder="Entrer mot de passe">
@@ -62,9 +62,7 @@
 					</div>
 
 					<div class="flex-col-c p-t-170 p-b-40">
-						<span class="txt1 p-b-9">
-							Vous avez déjà un compte?
-						</span>
+						<span class="txt1 p-b-9"></span>
 
 						<a href="#" class="txt3">
 							Se connecter
